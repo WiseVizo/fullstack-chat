@@ -31,3 +31,6 @@ def signup():
         headers={ "Private-Key": os.environ['CHAT_ENGINE_PRIVATE_KEY'] }
     )
     return response.json()
+
+if __name__ == "__main__":
+    app.run(debug=True)
